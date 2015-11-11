@@ -8,33 +8,42 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-	@include heading(44px, 700, #555);
+	@include font-base(44px, 700, #555);
 	margin-bottom: 40px;
 }
 
 h2 {
-	@include heading(40px, 700, #555);
+	@include font-base(40px, 700, #555);
 	margin-bottom: 30px;
 }
 
 h3 {
-	@include heading(32px, 300, #717171);
+	@include font-base(32px, 300, #717171);
 	margin-bottom: 20px;
 }
 
 h4 {
-	@include heading(24px, 700, #474747);
+	@include font-base(24px, 700, #474747);
 	margin-bottom: 20px;
 }
 
 h5 {
-	@include heading(24px, 300, #363636);
+	@include font-base(24px, 300, #363636);
 	margin-bottom: 20px;
 }
 
 h6 {
-	@include heading(17px, 700, #363636);
+	@include font-base(17px, 700, #363636);
 	margin-bottom: 40px;
 	text-transform: uppercase;
 	letter-spacing: 1px;
+}
+
+// Paragraph ====================================
+p {
+	font-family: "Lora", "Times New Roman", serif;
+	@include font-base(16px, 400, #585858);
+	line-height: 1.4;
+	margin-top: 15px;
+	margin-bottom: 15px;
 }

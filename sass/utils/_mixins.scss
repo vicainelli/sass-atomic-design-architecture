@@ -30,9 +30,9 @@
 	}
 }
 
-// Heading ======================================
-@mixin heading ($fsz, $fwg, $clr) {
-	font-size: 24px;
-	font-weight: 300;
-	color: #363636;
+// Font ======================================
+@mixin font-base ($fsz, $fwg, $clr) {
+	font-size: $fsz;
+	font-weight: $fwg;
+	color: $clr;
 }
