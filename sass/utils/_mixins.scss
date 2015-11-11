@@ -1,3 +1,38 @@
 // ==============================================
 // Mixins
 // ==============================================
+
+// Buttons ======================================
+@mixin button-color($bg-color, $color) {
+  background-color: $bg-color;
+  color: $color;
+}
+
+@mixin button-color-ghost($color: #f00) {
+  background-color: transparent;
+  color: $color;
+  border-color: $color;
+  &:hover {
+    color: #fff;
+    background-color: $color;
+  }
+}
+
+// Clearfix =====================================
+@mixin clearfix() {
+	&:before,
+	&:after {
+		content: " ";
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
+}
+
+// Font ======================================
+@mixin font-base ($fsz, $fwg, $clr) {
+	font-size: $fsz;
+	font-weight: $fwg;
+	color: $clr;
+}

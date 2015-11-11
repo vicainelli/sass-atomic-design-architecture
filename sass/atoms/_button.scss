@@ -1,3 +1,52 @@
 // ==============================================
 // Button
 // ==============================================
+
+// Base =========================================
+.button,
+a.button,
+button.button,
+input.button {
+  display: inline-block;
+  border: 0;
+  text-decoration: none;
+  color: #707C88;
+  background-color: #FCFCFC;
+  padding: 10px 15px;
+  min-width: 80px;
+  text-align: center;
+
+  &.ghost {
+    border-width: 1px;
+    border-style: solid;
+    @include button-color-ghost(#BABBBD);
+  }
+
+  &.secondary {
+    @include button-color(#8F9BA7, #fff);
+    &.ghost {
+      @include button-color-ghost(#8F9BA7);
+    }
+  }
+
+  &.success {
+    @include button-color(#7CB05B, #fff);
+    &.ghost {
+      @include button-color-ghost(#7CB05B);
+    }
+  }
+
+  &.info {
+    @include button-color(#458CCA, #fff);
+    &.ghost {
+      @include button-color-ghost(#458CCA);
+    }
+  }
+
+  &.danger {
+    @include button-color(#BD3030, #fff);
+    &.ghost {
+      @include button-color-ghost(#BD3030);
+    }
+  }
+}
